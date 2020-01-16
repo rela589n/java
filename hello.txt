@@ -1,0 +1,4 @@
+a	code: 97	octal: 141	hex: 61
+s	code: 115	octal: 163	hex: 73
+d	code: 100	octal: 144	hex: 64
+f	code: 102	octal: 146	hex: 66

@@ -2,22 +2,15 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="681e1eda-85a7-40d1-ad4c-587c18f2e2eb" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/com/company/ValidationException.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/com/company/Validator.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/com/company/first/FirstHandler.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/com/company/second/CharsInformer.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/com/company/second/SecondHandler.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out/production/Unit 3/com/company/Form$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Unit 3/com/company/Form$1.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Unit 3/com/company/Form$2.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Unit 3/com/company/Form$2.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out/production/Unit 3/com/company/Form.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Unit 3/com/company/Form.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out/production/Unit 3/com/company/Form.jfd" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Unit 3/com/company/Form.jfd" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Unit 3/com/company/MainForm$1.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Unit 3/com/company/MainForm.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Unit 3/com/company/MainForm.jfd" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/src/com/company/Form.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/company/Form.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/com/company/Form.jfd" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/company/Form.jfd" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/company/MainForm.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/company/MainForm.jfd" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/company/first/RootFinder.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/company/first/RootFinder.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -97,22 +90,26 @@
       <screen x="0" y="0" width="1536" height="834" />
     </state>
     <state x="574" y="134" key="#com.intellij.ide.util.MemberChooser/0.0.1536.834@0.0.1536.834" timestamp="1579172328195" />
-    <state width="1493" height="155" key="GridCell.Tab.0.bottom" timestamp="1579173433357">
+    <state x="198" y="0" key="#com.intellij.refactoring.rename.AutomaticRenamingDialog" timestamp="1579174757000">
       <screen x="0" y="0" width="1536" height="834" />
     </state>
-    <state width="1493" height="155" key="GridCell.Tab.0.bottom/0.0.1536.834@0.0.1536.834" timestamp="1579173433357" />
-    <state width="1493" height="155" key="GridCell.Tab.0.center" timestamp="1579173433357">
+    <state x="198" y="0" key="#com.intellij.refactoring.rename.AutomaticRenamingDialog/0.0.1536.834@0.0.1536.834" timestamp="1579174757000" />
+    <state width="1493" height="155" key="GridCell.Tab.0.bottom" timestamp="1579177123682">
       <screen x="0" y="0" width="1536" height="834" />
     </state>
-    <state width="1493" height="155" key="GridCell.Tab.0.center/0.0.1536.834@0.0.1536.834" timestamp="1579173433357" />
-    <state width="1493" height="155" key="GridCell.Tab.0.left" timestamp="1579173433357">
+    <state width="1493" height="155" key="GridCell.Tab.0.bottom/0.0.1536.834@0.0.1536.834" timestamp="1579177123682" />
+    <state width="1493" height="155" key="GridCell.Tab.0.center" timestamp="1579177123682">
       <screen x="0" y="0" width="1536" height="834" />
     </state>
-    <state width="1493" height="155" key="GridCell.Tab.0.left/0.0.1536.834@0.0.1536.834" timestamp="1579173433357" />
-    <state width="1493" height="155" key="GridCell.Tab.0.right" timestamp="1579173433357">
+    <state width="1493" height="155" key="GridCell.Tab.0.center/0.0.1536.834@0.0.1536.834" timestamp="1579177123682" />
+    <state width="1493" height="155" key="GridCell.Tab.0.left" timestamp="1579177123682">
       <screen x="0" y="0" width="1536" height="834" />
     </state>
-    <state width="1493" height="155" key="GridCell.Tab.0.right/0.0.1536.834@0.0.1536.834" timestamp="1579173433357" />
+    <state width="1493" height="155" key="GridCell.Tab.0.left/0.0.1536.834@0.0.1536.834" timestamp="1579177123682" />
+    <state width="1493" height="155" key="GridCell.Tab.0.right" timestamp="1579177123682">
+      <screen x="0" y="0" width="1536" height="834" />
+    </state>
+    <state width="1493" height="155" key="GridCell.Tab.0.right/0.0.1536.834@0.0.1536.834" timestamp="1579177123682" />
     <state x="431" y="155" key="search.everywhere.popup" timestamp="1579168907108">
       <screen x="0" y="0" width="1536" height="834" />
     </state>
