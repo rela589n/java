@@ -16,11 +16,10 @@ public class Validator {
     public boolean isInteger(String s) {
         try {
             Integer.parseInt(s);
+            return true;
         } catch (NumberFormatException | NullPointerException e) {
             return false;
         }
-
-        return true;
     }
 
     public boolean isFloat(String str) {
