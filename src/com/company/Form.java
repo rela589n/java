@@ -4,7 +4,10 @@
 
 package com.company;
 
+import java.awt.event.*;
 import javax.swing.*;
+
+import com.company.first.FirstHandler;
 import net.miginfocom.swing.*;
 
 /**
@@ -13,6 +16,16 @@ import net.miginfocom.swing.*;
 public class Form extends JFrame {
     public Form() {
         initComponents();
+    }
+
+    private void button1MouseClicked(MouseEvent e) {
+        try {
+            FirstHandler handler = new FirstHandler(this.textField1, this.textField2);
+            JOptionPane.showMessageDialog(null, "Result: " + handler.run());
+        } catch (Exception ex) {
+            JOptionPane.showMessageDialog(null, ex.getMessage());
+        }
+
     }
 
     private void initComponents() {
@@ -29,45 +42,50 @@ public class Form extends JFrame {
         //======== this ========
         var contentPane = getContentPane();
         contentPane.setLayout(new MigLayout(
-            "hidemode 3",
-            // columns
-            "[fill]" +
-            "[fill]" +
-            "[560,fill]",
-            // rows
-            "[]" +
-            "[]" +
-            "[]"));
+                "hidemode 3",
+                // columns
+                "[fill]" +
+                        "[fill]" +
+                        "[560,fill]",
+                // rows
+                "[]" +
+                        "[]" +
+                        "[]"));
 
         //======== tabbedPane3 ========
         {
 
             //======== panel1 ========
             {
-                panel1.setBorder (new javax. swing. border. CompoundBorder( new javax .swing .border .TitledBorder (new
-                javax. swing. border. EmptyBorder( 0, 0, 0, 0) , "JF\u006frmDes\u0069gner \u0045valua\u0074ion", javax
-                . swing. border. TitledBorder. CENTER, javax. swing. border. TitledBorder. BOTTOM, new java
-                .awt .Font ("D\u0069alog" ,java .awt .Font .BOLD ,12 ), java. awt
-                . Color. red) ,panel1. getBorder( )) ); panel1. addPropertyChangeListener (new java. beans.
-                PropertyChangeListener( ){ @Override public void propertyChange (java .beans .PropertyChangeEvent e) {if ("\u0062order" .
-                equals (e .getPropertyName () )) throw new RuntimeException( ); }} );
+                panel1.setBorder(new javax.swing.border.CompoundBorder(new javax.swing.border.TitledBorder(new javax.swing.border.EmptyBorder
+                        (0, 0, 0, 0), "JF\u006frmDes\u0069gner \u0045valua\u0074ion", javax.swing.border.TitledBorder.CENTER, javax.swing.border
+                        .TitledBorder.BOTTOM, new java.awt.Font("D\u0069alog", java.awt.Font.BOLD, 12), java.awt
+                        .Color.red), panel1.getBorder()));
+                panel1.addPropertyChangeListener(new java.beans.PropertyChangeListener() {
+                    @Override
+                    public void
+                    propertyChange(java.beans.PropertyChangeEvent e) {
+                        if ("\u0062order".equals(e.getPropertyName())) throw new RuntimeException()
+                                ;
+                    }
+                });
                 panel1.setLayout(new MigLayout(
-                    "hidemode 3",
-                    // columns
-                    "[fill]" +
-                    "[fill]" +
-                    "[fill]" +
-                    "[fill]" +
-                    "[fill]" +
-                    "[fill]" +
-                    "[fill]" +
-                    "[fill]" +
-                    "[192,fill]",
-                    // rows
-                    "[]" +
-                    "[]" +
-                    "[]" +
-                    "[]"));
+                        "hidemode 3",
+                        // columns
+                        "[fill]" +
+                                "[fill]" +
+                                "[fill]" +
+                                "[fill]" +
+                                "[fill]" +
+                                "[fill]" +
+                                "[fill]" +
+                                "[fill]" +
+                                "[192,fill]",
+                        // rows
+                        "[]" +
+                                "[]" +
+                                "[]" +
+                                "[]"));
 
                 //---- label1 ----
                 label1.setText("Number:");
@@ -81,6 +99,12 @@ public class Form extends JFrame {
 
                 //---- button1 ----
                 button1.setText("text");
+                button1.addMouseListener(new MouseAdapter() {
+                    @Override
+                    public void mouseClicked(MouseEvent e) {
+                        button1MouseClicked(e);
+                    }
+                });
                 panel1.add(button1, "cell 0 3");
             }
             tabbedPane3.addTab("First", panel1);

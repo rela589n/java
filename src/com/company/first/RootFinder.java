@@ -2,13 +2,13 @@ package com.company.first;
 
 
 public class RootFinder {
-    private static double power(double a, double b) {
+    private double power(double a, double b) {
         return Math.exp(b * Math.log(a));
     }
 
-    private static double eps = 0.0001;
+    private double eps = 0.0001;
 
-    private static double mySqrt(double number, int pow) throws Exception {
+    public double mySqrt(double number, int pow) throws Exception {
         if (number < 0)
             throw new Exception("Number must be natural int");
         if (pow == 0) {
