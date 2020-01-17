@@ -7,14 +7,15 @@
       <change afterPath="$PROJECT_DIR$/src/com/company/fifth/FifthHandler.java" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/src/com/company/fifth/RectanglesFinder.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Unit 3/com/company/Form$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Unit 3/com/company/Form$1.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out/production/Unit 3/com/company/Form$2.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Unit 3/com/company/Form$2.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out/production/Unit 3/com/company/Form$3.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Unit 3/com/company/Form$3.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out/production/Unit 3/com/company/Form$4.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Unit 3/com/company/Form$4.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out/production/Unit 3/com/company/Form$5.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Unit 3/com/company/Form$5.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Unit 3/com/company/Form$6.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Unit 3/com/company/Form$6.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out/production/Unit 3/com/company/Form.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Unit 3/com/company/Form.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out/production/Unit 3/com/company/Form.jfd" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Unit 3/com/company/Form.jfd" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/com/company/Form.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/company/Form.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/company/Form.jfd" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/company/Form.jfd" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/com/company/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/company/Main.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -117,22 +118,22 @@
       <screen x="0" y="0" width="1536" height="834" />
     </state>
     <state x="198" y="0" key="#com.intellij.refactoring.rename.AutomaticRenamingDialog/0.0.1536.834@0.0.1536.834" timestamp="1579174757000" />
-    <state width="1493" height="155" key="GridCell.Tab.0.bottom" timestamp="1579183580111">
+    <state width="1493" height="108" key="GridCell.Tab.0.bottom" timestamp="1579246056432">
       <screen x="0" y="0" width="1536" height="834" />
     </state>
-    <state width="1493" height="155" key="GridCell.Tab.0.bottom/0.0.1536.834@0.0.1536.834" timestamp="1579183580111" />
-    <state width="1493" height="155" key="GridCell.Tab.0.center" timestamp="1579183580111">
+    <state width="1493" height="108" key="GridCell.Tab.0.bottom/0.0.1536.834@0.0.1536.834" timestamp="1579246056432" />
+    <state width="1493" height="108" key="GridCell.Tab.0.center" timestamp="1579246056432">
       <screen x="0" y="0" width="1536" height="834" />
     </state>
-    <state width="1493" height="155" key="GridCell.Tab.0.center/0.0.1536.834@0.0.1536.834" timestamp="1579183580111" />
-    <state width="1493" height="155" key="GridCell.Tab.0.left" timestamp="1579183580111">
+    <state width="1493" height="108" key="GridCell.Tab.0.center/0.0.1536.834@0.0.1536.834" timestamp="1579246056432" />
+    <state width="1493" height="108" key="GridCell.Tab.0.left" timestamp="1579246056432">
       <screen x="0" y="0" width="1536" height="834" />
     </state>
-    <state width="1493" height="155" key="GridCell.Tab.0.left/0.0.1536.834@0.0.1536.834" timestamp="1579183580111" />
-    <state width="1493" height="155" key="GridCell.Tab.0.right" timestamp="1579183580111">
+    <state width="1493" height="108" key="GridCell.Tab.0.left/0.0.1536.834@0.0.1536.834" timestamp="1579246056432" />
+    <state width="1493" height="108" key="GridCell.Tab.0.right" timestamp="1579246056432">
       <screen x="0" y="0" width="1536" height="834" />
     </state>
-    <state width="1493" height="155" key="GridCell.Tab.0.right/0.0.1536.834@0.0.1536.834" timestamp="1579183580111" />
+    <state width="1493" height="108" key="GridCell.Tab.0.right/0.0.1536.834@0.0.1536.834" timestamp="1579246056432" />
     <state x="444" y="243" key="com.intellij.ide.util.TipDialog" timestamp="1579242727463">
       <screen x="0" y="0" width="1536" height="834" />
     </state>

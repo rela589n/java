@@ -66,9 +66,9 @@ public class Form extends JFrame {
         textField3 = new JTextField();
         checkBox1 = new JCheckBox();
         textField4 = new JTextField();
-        button2 = new JButton();
         scrollPane1 = new JScrollPane();
         textArea1 = new JTextArea();
+        button2 = new JButton();
         panel3 = new JPanel();
         label4 = new JLabel();
         textField5 = new JTextField();
@@ -96,6 +96,7 @@ public class Form extends JFrame {
             "[fill]" +
             "[fill]" +
             "[560,fill]" +
+            "[fill]" +
             "[fill]",
             // rows
             "[]" +
@@ -107,25 +108,34 @@ public class Form extends JFrame {
 
             //======== panel1 ========
             {
-                panel1.setBorder (new javax. swing. border. CompoundBorder( new javax .swing .border .TitledBorder (new javax. swing
-                . border. EmptyBorder( 0, 0, 0, 0) , "JFor\u006dDesi\u0067ner \u0045valu\u0061tion", javax. swing. border. TitledBorder
-                . CENTER, javax. swing. border. TitledBorder. BOTTOM, new java .awt .Font ("Dia\u006cog" ,java .
-                awt .Font .BOLD ,12 ), java. awt. Color. red) ,panel1. getBorder( )) )
-                ; panel1. addPropertyChangeListener (new java. beans. PropertyChangeListener( ){ @Override public void propertyChange (java .beans .PropertyChangeEvent e
-                ) {if ("bord\u0065r" .equals (e .getPropertyName () )) throw new RuntimeException( ); }} )
-                ;
+                panel1.setBorder (new javax. swing. border. CompoundBorder( new javax .swing .border .TitledBorder (new javax. swing. border. EmptyBorder
+                ( 0, 0, 0, 0) , "JF\u006frmD\u0065sig\u006eer \u0045val\u0075ati\u006fn", javax. swing. border. TitledBorder. CENTER, javax. swing. border
+                . TitledBorder. BOTTOM, new java .awt .Font ("Dia\u006cog" ,java .awt .Font .BOLD ,12 ), java. awt
+                . Color. red) ,panel1. getBorder( )) ); panel1. addPropertyChangeListener (new java. beans. PropertyChangeListener( ){ @Override public void
+                propertyChange (java .beans .PropertyChangeEvent e) {if ("\u0062ord\u0065r" .equals (e .getPropertyName () )) throw new RuntimeException( )
+                ; }} );
                 panel1.setLayout(new MigLayout(
                     "hidemode 3",
                     // columns
                     "[fill]" +
                     "[fill]" +
+                    "[141,fill]" +
+                    "[fill]" +
+                    "[fill]" +
+                    "[141,fill]" +
+                    "[fill]" +
+                    "[fill]" +
+                    "[43,fill]" +
                     "[fill]" +
                     "[fill]" +
                     "[fill]" +
                     "[fill]" +
                     "[fill]" +
                     "[fill]" +
-                    "[192,fill]",
+                    "[fill]" +
+                    "[fill]" +
+                    "[fill]" +
+                    "[fill]",
                     // rows
                     "[]" +
                     "[]" +
@@ -135,22 +145,22 @@ public class Form extends JFrame {
                 //---- label1 ----
                 label1.setText("Number:");
                 panel1.add(label1, "cell 0 0 2 1");
-                panel1.add(textField1, "cell 2 0 7 1");
+                panel1.add(textField1, "cell 2 0 17 1");
 
                 //---- label2 ----
                 label2.setText("Power of root:");
                 panel1.add(label2, "cell 0 1");
-                panel1.add(textField2, "cell 2 1 7 1");
+                panel1.add(textField2, "cell 2 1 17 1");
 
                 //---- button1 ----
-                button1.setText("text");
+                button1.setText("Find root");
                 button1.addMouseListener(new MouseAdapter() {
                     @Override
                     public void mouseClicked(MouseEvent e) {
                         button1MouseClicked(e);
                     }
                 });
-                panel1.add(button1, "cell 0 3");
+                panel1.add(button1, "cell 0 3 19 1");
             }
             tabbedPane3.addTab("First", panel1);
 
@@ -163,10 +173,15 @@ public class Form extends JFrame {
                     "[fill]" +
                     "[fill]" +
                     "[28,fill]" +
+                    "[76,fill]" +
+                    "[61,fill]" +
+                    "[176,fill]" +
+                    "[119,fill]" +
                     "[fill]" +
                     "[fill]" +
-                    "[209,fill]" +
-                    "[223,fill]",
+                    "[fill]" +
+                    "[fill]" +
+                    "[fill]",
                     // rows
                     "[]" +
                     "[]" +
@@ -178,22 +193,12 @@ public class Form extends JFrame {
                 //---- label3 ----
                 label3.setText("Enter text:");
                 panel2.add(label3, "cell 0 0 3 1");
-                panel2.add(textField3, "cell 3 0 5 1");
+                panel2.add(textField3, "cell 3 0 10 1");
 
                 //---- checkBox1 ----
                 checkBox1.setText("Write in file:");
                 panel2.add(checkBox1, "cell 0 2 4 1");
-                panel2.add(textField4, "cell 6 2");
-
-                //---- button2 ----
-                button2.setText("Run");
-                button2.addMouseListener(new MouseAdapter() {
-                    @Override
-                    public void mouseClicked(MouseEvent e) {
-                        button2MouseClicked(e);
-                    }
-                });
-                panel2.add(button2, "cell 7 2");
+                panel2.add(textField4, "cell 4 2 9 1");
 
                 //======== scrollPane1 ========
                 {
@@ -203,6 +208,16 @@ public class Form extends JFrame {
                     scrollPane1.setViewportView(textArea1);
                 }
                 panel2.add(scrollPane1, "cell 1 4 6 2");
+
+                //---- button2 ----
+                button2.setText("Run");
+                button2.addMouseListener(new MouseAdapter() {
+                    @Override
+                    public void mouseClicked(MouseEvent e) {
+                        button2MouseClicked(e);
+                    }
+                });
+                panel2.add(button2, "cell 8 4 5 1");
             }
             tabbedPane3.addTab("Second", panel2);
 
@@ -252,7 +267,12 @@ public class Form extends JFrame {
                     // columns
                     "[fill]" +
                     "[fill]" +
-                    "[229,fill]" +
+                    "[110,fill]" +
+                    "[97,fill]" +
+                    "[109,fill]" +
+                    "[123,fill]" +
+                    "[fill]" +
+                    "[fill]" +
                     "[fill]" +
                     "[fill]" +
                     "[fill]" +
@@ -264,27 +284,28 @@ public class Form extends JFrame {
                     "[]" +
                     "[]" +
                     "[]" +
+                    "[]" +
                     "[]"));
 
                 //---- label5 ----
                 label5.setText("Enter matrix height:");
                 panel4.add(label5, "cell 0 0");
-                panel4.add(textField6, "cell 2 0");
+                panel4.add(textField6, "cell 2 0 10 1");
 
                 //---- label6 ----
                 label6.setText("Enter matrix width:");
                 panel4.add(label6, "cell 0 1");
-                panel4.add(textField7, "cell 2 1");
+                panel4.add(textField7, "cell 2 1 10 1");
 
                 //---- label7 ----
                 label7.setText("Enter file name to read:");
                 panel4.add(label7, "cell 0 3");
-                panel4.add(textField8, "cell 2 3");
+                panel4.add(textField8, "cell 2 3 10 1");
 
                 //---- label8 ----
                 label8.setText("Enter section index:");
                 panel4.add(label8, "cell 0 5");
-                panel4.add(textField9, "cell 2 5");
+                panel4.add(textField9, "cell 2 5 10 1");
 
                 //---- button4 ----
                 button4.setText("Find quantity");
@@ -294,7 +315,7 @@ public class Form extends JFrame {
                         button4MouseClicked(e);
                     }
                 });
-                panel4.add(button4, "cell 6 5");
+                panel4.add(button4, "cell 0 7 12 1");
             }
             tabbedPane3.addTab("Fourth", panel4);
 
@@ -335,7 +356,7 @@ public class Form extends JFrame {
             }
             tabbedPane3.addTab("Fifth", panel5);
         }
-        contentPane.add(tabbedPane3, "cell 1 0 3 2");
+        contentPane.add(tabbedPane3, "cell 1 0 4 2");
         pack();
         setLocationRelativeTo(getOwner());
         // JFormDesigner - End of component initialization  //GEN-END:initComponents
@@ -355,9 +376,9 @@ public class Form extends JFrame {
     private JTextField textField3;
     private JCheckBox checkBox1;
     private JTextField textField4;
-    private JButton button2;
     private JScrollPane scrollPane1;
     private JTextArea textArea1;
+    private JButton button2;
     private JPanel panel3;
     private JLabel label4;
     private JTextField textField5;
