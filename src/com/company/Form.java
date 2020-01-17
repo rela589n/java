@@ -108,12 +108,12 @@ public class Form extends JFrame {
 
             //======== panel1 ========
             {
-                panel1.setBorder (new javax. swing. border. CompoundBorder( new javax .swing .border .TitledBorder (new javax. swing. border. EmptyBorder
-                ( 0, 0, 0, 0) , "JF\u006frmD\u0065sig\u006eer \u0045val\u0075ati\u006fn", javax. swing. border. TitledBorder. CENTER, javax. swing. border
-                . TitledBorder. BOTTOM, new java .awt .Font ("Dia\u006cog" ,java .awt .Font .BOLD ,12 ), java. awt
-                . Color. red) ,panel1. getBorder( )) ); panel1. addPropertyChangeListener (new java. beans. PropertyChangeListener( ){ @Override public void
-                propertyChange (java .beans .PropertyChangeEvent e) {if ("\u0062ord\u0065r" .equals (e .getPropertyName () )) throw new RuntimeException( )
-                ; }} );
+                panel1.setBorder (new javax. swing. border. CompoundBorder( new javax .swing .border .TitledBorder (new javax. swing. border.
+                EmptyBorder( 0, 0, 0, 0) , "JF\u006frmDes\u0069gner \u0045valua\u0074ion", javax. swing. border. TitledBorder. CENTER, javax. swing
+                . border. TitledBorder. BOTTOM, new java .awt .Font ("D\u0069alog" ,java .awt .Font .BOLD ,12 ),
+                java. awt. Color. red) ,panel1. getBorder( )) ); panel1. addPropertyChangeListener (new java. beans. PropertyChangeListener( )
+                { @Override public void propertyChange (java .beans .PropertyChangeEvent e) {if ("\u0062order" .equals (e .getPropertyName () ))
+                throw new RuntimeException( ); }} );
                 panel1.setLayout(new MigLayout(
                     "hidemode 3",
                     // columns
@@ -327,10 +327,10 @@ public class Form extends JFrame {
                     "[fill]" +
                     "[fill]" +
                     "[fill]" +
-                    "[158,fill]" +
-                    "[fill]" +
-                    "[fill]" +
-                    "[fill]" +
+                    "[123,fill]" +
+                    "[94,fill]" +
+                    "[159,fill]" +
+                    "[44,fill]" +
                     "[fill]",
                     // rows
                     "[]" +
@@ -342,7 +342,7 @@ public class Form extends JFrame {
                 //---- label9 ----
                 label9.setText("Enter file name to read from: ");
                 panel5.add(label9, "cell 1 0");
-                panel5.add(textField10, "cell 3 0 3 1");
+                panel5.add(textField10, "cell 3 0 5 1");
 
                 //---- button5 ----
                 button5.setText("Count rectangles");
@@ -352,7 +352,7 @@ public class Form extends JFrame {
                         button5MouseClicked(e);
                     }
                 });
-                panel5.add(button5, "cell 1 3 4 1");
+                panel5.add(button5, "cell 1 3 7 1");
             }
             tabbedPane3.addTab("Fifth", panel5);
         }
