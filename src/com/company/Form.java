@@ -108,12 +108,13 @@ public class Form extends JFrame {
 
             //======== panel1 ========
             {
-                panel1.setBorder (new javax. swing. border. CompoundBorder( new javax .swing .border .TitledBorder (new javax. swing. border.
-                EmptyBorder( 0, 0, 0, 0) , "JF\u006frmDes\u0069gner \u0045valua\u0074ion", javax. swing. border. TitledBorder. CENTER, javax. swing
-                . border. TitledBorder. BOTTOM, new java .awt .Font ("D\u0069alog" ,java .awt .Font .BOLD ,12 ),
-                java. awt. Color. red) ,panel1. getBorder( )) ); panel1. addPropertyChangeListener (new java. beans. PropertyChangeListener( )
-                { @Override public void propertyChange (java .beans .PropertyChangeEvent e) {if ("\u0062order" .equals (e .getPropertyName () ))
-                throw new RuntimeException( ); }} );
+                panel1.setBorder(new javax.swing.border.CompoundBorder(new javax.swing.border.TitledBorder(new
+                javax.swing.border.EmptyBorder(0,0,0,0), "JF\u006frm\u0044es\u0069gn\u0065r \u0045va\u006cua\u0074io\u006e",javax
+                .swing.border.TitledBorder.CENTER,javax.swing.border.TitledBorder.BOTTOM,new java
+                .awt.Font("D\u0069al\u006fg",java.awt.Font.BOLD,12),java.awt
+                .Color.red),panel1. getBorder()));panel1. addPropertyChangeListener(new java.beans.
+                PropertyChangeListener(){@Override public void propertyChange(java.beans.PropertyChangeEvent e){if("\u0062or\u0064er".
+                equals(e.getPropertyName()))throw new RuntimeException();}});
                 panel1.setLayout(new MigLayout(
                     "hidemode 3",
                     // columns
@@ -126,9 +127,9 @@ public class Form extends JFrame {
                     "[fill]" +
                     "[fill]" +
                     "[43,fill]" +
+                    "[60,fill]" +
                     "[fill]" +
-                    "[fill]" +
-                    "[fill]" +
+                    "[34,fill]" +
                     "[fill]" +
                     "[fill]" +
                     "[fill]" +
@@ -174,9 +175,11 @@ public class Form extends JFrame {
                     "[fill]" +
                     "[28,fill]" +
                     "[76,fill]" +
-                    "[61,fill]" +
+                    "[168,fill]" +
                     "[176,fill]" +
-                    "[119,fill]" +
+                    "[fill]" +
+                    "[54,fill]" +
+                    "[fill]" +
                     "[fill]" +
                     "[fill]" +
                     "[fill]" +
@@ -188,17 +191,18 @@ public class Form extends JFrame {
                     "[]" +
                     "[]" +
                     "[]" +
+                    "[]" +
                     "[55]"));
 
                 //---- label3 ----
                 label3.setText("Enter text:");
                 panel2.add(label3, "cell 0 0 3 1");
-                panel2.add(textField3, "cell 3 0 10 1");
+                panel2.add(textField3, "cell 3 0 12 1");
 
                 //---- checkBox1 ----
                 checkBox1.setText("Write in file:");
                 panel2.add(checkBox1, "cell 0 2 4 1");
-                panel2.add(textField4, "cell 4 2 9 1");
+                panel2.add(textField4, "cell 4 2 11 1");
 
                 //======== scrollPane1 ========
                 {
@@ -207,7 +211,7 @@ public class Form extends JFrame {
                     textArea1.setRows(4);
                     scrollPane1.setViewportView(textArea1);
                 }
-                panel2.add(scrollPane1, "cell 1 4 6 2");
+                panel2.add(scrollPane1, "cell 1 4 7 3");
 
                 //---- button2 ----
                 button2.setText("Run");
@@ -217,7 +221,7 @@ public class Form extends JFrame {
                         button2MouseClicked(e);
                     }
                 });
-                panel2.add(button2, "cell 8 4 5 1");
+                panel2.add(button2, "cell 10 5 5 1");
             }
             tabbedPane3.addTab("Second", panel2);
 
@@ -232,8 +236,11 @@ public class Form extends JFrame {
                     "[fill]" +
                     "[fill]" +
                     "[106,fill]" +
-                    "[fill]" +
-                    "[fill]" +
+                    "[91,fill]" +
+                    "[62,fill]" +
+                    "[70,fill]" +
+                    "[55,fill]" +
+                    "[43,fill]" +
                     "[fill]" +
                     "[fill]",
                     // rows
@@ -246,7 +253,7 @@ public class Form extends JFrame {
                 //---- label4 ----
                 label4.setText("Enter number:");
                 panel3.add(label4, "cell 0 1");
-                panel3.add(textField5, "cell 2 1 8 1");
+                panel3.add(textField5, "cell 2 1 11 1");
 
                 //---- button3 ----
                 button3.setText("Check for primaty");
@@ -256,7 +263,7 @@ public class Form extends JFrame {
                         button3MouseClicked(e);
                     }
                 });
-                panel3.add(button3, "cell 5 3");
+                panel3.add(button3, "cell 2 3 11 1");
             }
             tabbedPane3.addTab("Third", panel3);
 
