@@ -7,6 +7,7 @@ package com.company;
 import java.awt.event.*;
 import javax.swing.*;
 
+import com.company.fifth.FifthHandler;
 import com.company.first.FirstHandler;
 import com.company.fourth.FourthHandler;
 import com.company.second.SecondHandler;
@@ -46,7 +47,8 @@ public class Form extends JFrame {
     }
 
     private void button5MouseClicked(MouseEvent e) {
-        
+        FifthHandler handler = new FifthHandler(textField10);
+        handler.run();
     }
 
     private void initComponents() {
